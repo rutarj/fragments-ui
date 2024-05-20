@@ -1,0 +1,25 @@
+{
+    "name": "fragments-ui",
+    "private": true,
+    "version": "0.0.1",
+    "description": "Fragments UI testing web app",
+    "scripts": {
+        "start": "parcel src/index.html",
+        "build": "parcel build src/index.html",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rutarj/fragments-ui.git"
+    },
+    "author": "Rutarj Shah",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "buffer": "^6.0.3",
+        "parcel": "latest",
+        "process": "^0.11.10"
+    },
+    "dependencies": {
+        "aws-amplify": "^5.0.0"
+    }
+}

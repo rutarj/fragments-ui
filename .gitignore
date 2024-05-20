@@ -128,3 +128,55 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Node modules and build directories
+node_modules/
+.parcel-cache/
+dist/
+
+# System files
+*.DS_Store
+*.log
+*.tmp
+*.swp
+*~
+*.swo
+
+# User directories and files
+Application\ Data/
+Cookies/
+Local\ Settings/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start\ Menu/
+Templates/
+AppData/
+Contacts/
+Documents/
+Downloads/
+Favorites/
+Jedi/
+Links/
+Music/
+My\ Documents/
+My\ project/
+NTUSER.DAT*
+Saved\ Games/
+Searches/
+Videos/
+WPS\ Cloud\ Files/
+anaconda3/
+assignment/
+mingw64/
+npm-cache/
+*.ipynb
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
