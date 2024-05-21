@@ -2,7 +2,6 @@
 
 import { Amplify, Auth } from 'aws-amplify';
 
-
 // Configure our Auth object to use our Cognito User Pool
 Amplify.configure({
   Auth: {

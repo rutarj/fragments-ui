@@ -1,6 +1,7 @@
 // src/app.js
 
 import { Auth, getUser } from './auth';
+import { getUserFragments } from './api';
 
 async function init() {
   // Get our UI elements
@@ -8,6 +9,10 @@ async function init() {
   const loginBtn = document.querySelector('#login');
   const logoutBtn = document.querySelector('#logout');
 
+
+  
+  // Do an authenticated request to the fragments API server and log the result
+  
   // Wire up event handlers to deal with login and logout.
   loginBtn.onclick = () => {
     // Sign-in via the Amazon Cognito Hosted UI (requires redirects), see:
@@ -22,11 +27,13 @@ async function init() {
 
   // See if we're signed in (i.e., we'll have a `user` object)
   const user = await getUser();
+  
   if (!user) {
     // Disable the Logout button
     logoutBtn.disabled = true;
     return;
   }
+  const userFragments = await getUserFragments(user);
 
   // Log the user info for debugging purposes
   console.log({ user });
