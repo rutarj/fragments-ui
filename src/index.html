@@ -8,11 +8,51 @@
   </head>
   <body>
     <h1>Fragments UI</h1>
-    <section>
-      <nav><button id="login">Login</button> <button id="logout">Logout</button></nav>
-    </section>
     <section hidden id="user">
       <h2>Hello <span class="username"></span>!</h2>
+    </section>
+    <section>
+      <nav><button id="login">Login</button> <button id="logout">Logout</button></nav>
+      <br>
+      <nav>
+        <form>
+          <label for="textfield">Enter fragment text here to POST</label>
+          <input id="textfield" type="text"/>
+        </form>
+        <br>
+        <button id="textPlainBtn">text/plain</button>
+        <button id="textMdBtn">text/markdown</button>
+        <button id="textHtmlBtn">text/html</button>
+        <button id="applicationJsonBtn">application/json</button>
+      </nav>
+      <nav>
+        <br>
+        <form>
+          <label for="fragId">Enter fragment id to modify or delete</label>
+          <input id="fragId" type="text"/>
+        </form>
+        <form>
+          <label for="textfield2">Enter fragment text here to PUT</label>
+          <input id="textfield2" type="text"/>
+        </form>
+        <br>
+        <button id="putBtn">Modify fragment</button>
+        <button id="delBtn">Delete fragment</button>
+      </nav>
+      <nav>
+        <br>
+        <label for="imageFile">Select Image File to POST</label>
+        <input id="imageFile" type="file" accept="image/*">
+    </br>
+      </nav>
+      <nav>
+        <br>
+        <button id="expand">View existing fragments</button>
+        <button id="expand2">View existing fragments metadata</button>
+      </nav>
+      <div>
+        <div id="displayFragments"></div>
+      </div>
     </section>
   </body>
 </html>

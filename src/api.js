@@ -1,7 +1,9 @@
 // src/api.js
 
 // fragments microservice API to use, defaults to localhost:8080 if not set in env
-const apiUrl = process.env.API_URL || 'http://localhost:8080';
+//const apiUrl = process.env.API_URL || 'http://localhost:8080'
+const apiUrl = 'https://ec2-54-172-24-25.compute-1.amazonaws.com';
+
 
 /**
  * Given an authenticated user, request all fragments for this user from the
