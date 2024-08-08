@@ -1,9 +1,9 @@
 // src/api.js
 
 // fragments microservice API to use, defaults to localhost:8080 if not set in env
-//const apiUrl = process.env.API_URL || 'http://localhost:8080'
+const apiUrl = process.env.API_URL || 'http://localhost:8080'
 
-const apiUrl = 'https://ec2-54-162-90-59.compute-1.amazonaws.com';
+
 
 
 /**
@@ -14,6 +14,7 @@ const apiUrl = 'https://ec2-54-162-90-59.compute-1.amazonaws.com';
 export async function getUserFragments(user) {
   console.log('Requesting user fragments data...');
   try {
+    // debugger;
     const res = await fetch(`${apiUrl}/v1/fragments`, {
       // Generate headers with the proper Authorization bearer token to pass.
       // We are using the `authorizationHeaders()` helper method we defined

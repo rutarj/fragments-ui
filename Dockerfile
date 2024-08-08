@@ -25,8 +25,8 @@ COPY --from=build /app .
 RUN npm ci --production
 
 COPY ./src ./src
-COPY ./tests/.htpasswd ./tests/.htpasswd
 
-CMD ["npm", "start"]
 
-EXPOSE 8080
+CMD ["nginx", "-g", "daemon off;"]
+
+EXPOSE 80

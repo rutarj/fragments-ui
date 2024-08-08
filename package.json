@@ -3,6 +3,8 @@
     "private": true,
     "version": "0.0.1",
     "description": "Fragments UI testing web app",
+    "source": "src/index.html",
+
     "scripts": {
         "start": "parcel src/index.html",
         "build": "parcel build src/index.html",
@@ -12,7 +14,8 @@
         "type": "git",
         "url": "git+https://github.com/rutarj/fragments-ui.git"
     },
-    "author": "Rutarj Shah",
+
+    "author": "Rutarj <rshah103@myseneca.ca",
     "license": "UNLICENSED",
     "devDependencies": {
         "buffer": "^6.0.3",
@@ -25,3 +28,4 @@
         "aws-amplify": "^5.2.2"
     }
 }
+
