@@ -1,6 +1,6 @@
 # Fragments UI
 
-A frontend UI built using Next.js to test all the functionalities provided by the [fragments API](https://github.com/AryanK1511/fragments).
+A frontend UI built using Next.js to test all the functionalities provided by the [fragments API](https://github.com/rutarj/fragments).
 <br /><br />
 
 <div align="center">
